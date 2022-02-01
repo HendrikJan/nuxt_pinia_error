@@ -1,0 +1,8 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/home.js": "pages/home.js",
+    "server.js": "server.js"
+  },
+  "maps": {}
+}

@@ -9,22 +9,15 @@
 </template>
 
 <script>
-import { mapState, mapActions } from 'pinia';
-import { useUserStore } from '@/store/userStore';
-
 export default {
-  name: 'HomePage',
+  name: "HomePage",
   data() {
-    return {};
-  },
-  async fetch() {
-    await this.fetchUser();
-  },
-  computed: {
-    ...mapState(useUserStore, ['user']),
-  },
-  methods: {
-    ...mapActions(useUserStore, ['fetchUser']),
+    return {
+      user: {
+        name: "John Doe",
+        age: 30,
+      },
+    };
   },
   fetchOnServer: true,
 };

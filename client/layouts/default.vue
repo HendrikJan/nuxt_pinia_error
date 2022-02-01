@@ -9,19 +9,8 @@
 </template>
 
 <script>
-import { mapState } from 'pinia';
-import { useUserStore } from '@/store/userStore';
-
 export default {
-  name: 'DefaultLayout',
-  async fetch() {
-    const userStore = useUserStore();
-    await userStore.fetchUser();
-  },
-  computed: {
-    ...mapState(useUserStore, ['user']),
-  },
-  fetchOnServer: true,
+  name: "DefaultLayout",
 };
 </script>
 

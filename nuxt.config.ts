@@ -6,8 +6,6 @@ const nuxtBrowserBaseUrl = 'http://localhost:3000';
 console.log('Nuxt config loading...');
 
 export default defineNuxtConfig({
-  srcDir: 'client/',
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'error demo',
